@@ -1,0 +1,352 @@
+        :root {
+            --white: #ffffff;
+            --black: #000000;
+            --soft-blue: #e6f0ff;
+            --main-blue: #365cf4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+        /* Container untuk konten utama */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .header-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: var(--main-blue);
+            color: var(--white);
+        }
+
+        .header-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .header-section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Intro Section */
+        .intro-section {
+            padding: 50px 20px;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .intro-section h2 {
+            color: var(--main-blue);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .intro-section p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        /* Categories */
+        .ekskul-categories {
+            padding: 50px 20px;
+            background-color: var(--soft-blue);
+        }
+
+        .ekskul-categories h2 {
+            text-align: center;
+            color: var(--main-blue);
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .category {
+            text-align: center;
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .category:hover {
+            transform: translateY(-10px);
+        }
+
+        .category i {
+            font-size: 2.5rem;
+            color: var(--main-blue);
+            margin-bottom: 15px;
+        }
+
+        .category h3 {
+            color: var(--black);
+            margin-bottom: 10px;
+        }
+
+        .category p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Ekskul List */
+        .ekskul-list {
+            padding: 50px 20px;
+        }
+
+        .ekskul-list h2 {
+            text-align: center;
+            color: var(--main-blue);
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .ekskul-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .ekskul-card {
+            width: 100%;
+            max-width: 350px;
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .ekskul-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ekskul-image {
+            height: 200px;
+            background-color: var(--soft-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .ekskul-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ekskul-content {
+            padding: 20px;
+        }
+
+        .ekskul-content h3 {
+            color: var(--black);
+            margin-bottom: 10px;
+        }
+
+        .ekskul-content p {
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .ekskul-content .schedule {
+            font-size: 0.9rem;
+            color: var(--main-blue);
+            font-weight: bold;
+        }
+
+        .ekskul-content .coach {
+            font-size: 0.9rem;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 50px 20px;
+            background-color: var(--soft-blue);
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            color: var(--main-blue);
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .testimonial {
+            background-color: var(--white);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-width: 350px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .testimonial .student-name {
+            font-weight: bold;
+            color: var(--main-blue);
+        }
+
+        .testimonial .student-details {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* FAQs */
+        .faqs {
+            padding: 50px 20px;
+        }
+
+        .faqs h2 {
+            text-align: center;
+            color: var(--main-blue);
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: var(--black);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px 0;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--main-blue);
+        }
+
+        .faq-question.active::after {
+            content: '-';
+        }
+
+        .faq-question.active + .faq-answer {
+            display: block;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 50px 20px;
+            background-color: var(--main-blue);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--white);
+            color: var(--main-blue);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Placeholder for navbar and footer */
+        .navbar-placeholder, .footer-placeholder {
+            padding: 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .ekskul-card, .category, .testimonial {
+                max-width: 100%;
+            }
+            
+            .header-section h1 {
+                font-size: 2rem;
+            }
+            
+            .header-section p,
+            .intro-section p,
+            .cta-section p {
+                font-size: 1rem;
+            }
+        }
