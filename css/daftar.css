@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Quicksand', sans-serif;
+} 
+body {
+    background-image: url(img/halaman2.jpg);
+}
+h1{
+    background-color: rgb(49, 46, 46);
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    margin:auto;
+    padding: 20px;
+}
+h2{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    margin:auto;
+    padding: 20px;
+}
+.box-formulir{
+    width: 50%;
+    margin: 100px auto;
+    border: 1px solid;
+    background-color: #fff;
+}
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    margin:5px 0 25px;
+}
+.table-form{
+    width: 100%;
+}
+.table-form tr td:nth-child(1) {
+    width: 30%;
+}
+.input-control{
+    padding: 5px 30px;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.btn-daftar{
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #2948cf; /* warna biru merak */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn-daftar:hover{
+    background-color: #5533ff; /* sedikit lebih gelap saat hover */
+    transform: scale(1.05); /* sedikit membesar saat hover */
+}
+.btn-kembali {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #2948cf; /* warna biru merak */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-kembali:hover {
+    background-color: #5533ff; /* sedikit lebih gelap saat hover */
+    transform: scale(1.05); /* sedikit membesar saat hover */
+}
+
+
+.btn-cetak{
+    display: inline-block;
+    padding: 30px 30px;
+    color: #fff;
+    background-color: #2961e4;
+    margin-top: 8px;
+}
+.table {
+    width:100%;
+    
+}

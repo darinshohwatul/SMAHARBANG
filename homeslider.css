@@ -1,0 +1,133 @@
+/* Slider Styles */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.slider {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: var(--white);
+    padding: 40px;
+    max-width: 600px;
+}
+
+.slide-caption h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.slide-caption p {
+    font-size: 1.1rem;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 10;
+}
+
+.prev-slide,
+.next-slide {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: var(--white);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.prev-slide:hover,
+.next-slide:hover {
+    background-color: var(--primary-color);
+}
+
+.slide-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.slide-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.slide-dot.active {
+    background-color: var(--white);
+    transform: scale(1.2);
+}
+
+/* Responsive Slider */
+@media (max-width: 768px) {
+    .slide-caption {
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .slide-caption h2 {
+        font-size: 1.5rem;
+    }
+    
+    .slide-caption p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .slide-caption {
+        padding: 15px;
+    }
+    
+    .slide-caption h2 {
+        font-size: 1.3rem;
+    }
+    
+    .slide-caption p {
+        font-size: 0.9rem;
+    }
+    
+    .prev-slide,
+    .next-slide {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}

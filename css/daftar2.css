@@ -1,0 +1,120 @@
+/* Contoh styling untuk judul */
+.judul-form {
+    font-size: 36px; /* Membuat teks lebih besar */
+    font-family: 'Poppins', sans-serif; /* Ganti dengan font yang lebih modern dan menarik */
+    font-weight: 700; /* Membuat teks tebal */
+    color: #333333; /* Warna teks bisa diubah sesuai selera */
+    text-align: center; /* Center teks jika diperlukan */
+    margin-bottom: 20px; /* Spasi bawah */
+}
+
+.container {
+    max-width: 794px; /* Seukuran kertas A4 */
+    width: 100%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(1, 87, 155, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #365cf4;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px; /* Jarak antar baris */
+    background-color: #e1f5fe;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: center;
+    border-bottom: 1px solid #b3e5fc;
+}
+
+th {
+    background-color:  #4dabf7;
+    color: white;
+    font-size: 16px;
+}
+/* Hapus padding sel pertama */
+tr td:first-child{
+    padding-left:0;        /* mepet */
+}
+
+/* Atau langsung pada link-nya */
+.btn-kembali{
+    margin-left: 0;         /* pastikan tidak ada jarak */
+    display:inline-block;  /* supaya bisa diatur dengan mudah */
+}
+
+.btn-daftar{
+    background:#4dabf7;     /* biru elegan */
+    color:#000000;
+    font-family:'Poppins',sans-serif;
+    font-size:16px;
+    padding:12px 28px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:background .3s;
+}
+.btn-daftar:hover{          /* efek hover */
+    background:#1E40AF;
+}
+
+
+tr {
+    background-color: #e1f5fe;
+    transition: background 0.3s;
+}
+
+tr:hover {
+    background-color: #b2ebf2;
+}
+
+a {
+    padding: 10px 20px;
+    background-color:  #4dabf7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin: 8px;
+}
+
+a:hover {
+    background-color: #365cf4;
+}
+
+.btn-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.table-form tr {
+    margin-bottom: 15px;
+    display: block;
+}
+.input-control {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
